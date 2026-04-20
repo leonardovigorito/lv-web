@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>FitZone Gym</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="demo-banner">🎨 Sitio de demostración — <a href="https://leonardovigorito.github.io/lv-web/" target="_blank">Quiero uno así para mi negocio</a></div>
+  <nav id="navbar">
+    <div class="logo">Fit<span>Zone</span></div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#clases">Clases</a></li>
+      <li><a href="#planes">Planes</a></li>
+      <li><a href="#instalaciones">Instalaciones</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="https://wa.me/5491100000000" target="_blank" class="nav-cta">Inscribirme</a>
+    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag"><i class="fas fa-bolt"></i> El gym que te hace avanzar de verdad</p>
+      <h1>Transformá<br>tu cuerpo y<br><span class="highlight">tu vida</span></h1>
+      <p class="hero-sub">Equipamiento de primer nivel, clases funcionales y entrenadores certificados. Más de 500 socios ya lo comprobaron.</p>
+      <div class="hero-btns">
+        <a href="https://wa.me/5491100000000" target="_blank" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Inscribirme ahora</a>
+        <a href="#planes" class="btn btn-outline">Ver planes</a>
+      </div>
+      <div class="hero-badges">
+        <span><i class="fas fa-check"></i> Sin contrato anual</span>
+        <span><i class="fas fa-check"></i> Primer mes gratis</span>
+        <span><i class="fas fa-check"></i> Estacionamiento</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="clases" class="section">
+    <div class="container">
+      <div class="section-header"><span class="tag">Actividades</span><h2>Nuestras <span class="accent">Clases</span></h2><p>Más de 20 disciplinas para todos los niveles</p></div>
+      <div class="clases-grid">
+        <div class="clase-card"><div class="clase-icon"><i class="fas fa-running"></i></div><h3>Funcional</h3><p>Lun/Mié/Vie · 7, 12, 19 hs</p></div>
+        <div class="clase-card featured"><div class="clase-icon"><i class="fas fa-fire"></i></div><h3>CrossFit</h3><p>Mar/Jue/Sáb · 8, 13, 18 hs</p></div>
+        <div class="clase-card"><div class="clase-icon"><i class="fas fa-spa"></i></div><h3>Yoga</h3><p>Mar/Jue · 9, 20 hs</p></div>
+        <div class="clase-card"><div class="clase-icon"><i class="fas fa-music"></i></div><h3>Zumba</h3><p>Lun/Mié · 18:30 hs</p></div>
+        <div class="clase-card"><div class="clase-icon"><i class="fas fa-bicycle"></i></div><h3>Spinning</h3><p>Lun a Sáb · 7, 9, 18 hs</p></div>
+        <div class="clase-card"><div class="clase-icon"><i class="fas fa-dumbbell"></i></div><h3>Musculación</h3><p>Lun a Sáb · 6 a 22 hs</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="planes" class="planes section">
+    <div class="container">
+      <div class="section-header"><span class="tag">Membresías</span><h2>Elegí tu <span class="accent">Plan</span></h2></div>
+      <div class="planes-grid">
+        <div class="plan-card">
+          <h3>Básico</h3><p>Solo musculación</p>
+          <div class="plan-price"><span>$</span>8.500<span>/mes</span></div>
+          <ul><li><i class="fas fa-check"></i> Sala de musculación libre</li><li><i class="fas fa-check"></i> Vestuarios y duchas</li><li><i class="fas fa-times disabled"></i> Clases grupales</li><li><i class="fas fa-times disabled"></i> Entrenador personal</li></ul>
+          <a href="https://wa.me/5491100000000" target="_blank" class="btn btn-outline-dark">Elegir</a>
+        </div>
+        <div class="plan-card featured">
+          <div class="plan-badge">Más elegido</div>
+          <h3>Full</h3><p>Todo incluido</p>
+          <div class="plan-price"><span>$</span>12.000<span>/mes</span></div>
+          <ul><li><i class="fas fa-check"></i> Sala de musculación libre</li><li><i class="fas fa-check"></i> Vestuarios y duchas</li><li><i class="fas fa-check"></i> Todas las clases grupales</li><li><i class="fas fa-times disabled"></i> Entrenador personal</li></ul>
+          <a href="https://wa.me/5491100000000" target="_blank" class="btn btn-primary">Lo quiero</a>
+        </div>
+        <div class="plan-card">
+          <h3>Premium</h3><p>Máximos resultados</p>
+          <div class="plan-price"><span>$</span>18.000<span>/mes</span></div>
+          <ul><li><i class="fas fa-check"></i> Sala de musculación libre</li><li><i class="fas fa-check"></i> Vestuarios y duchas</li><li><i class="fas fa-check"></i> Todas las clases grupales</li><li><i class="fas fa-check"></i> 4 sesiones entrenador/mes</li></ul>
+          <a href="https://wa.me/5491100000000" target="_blank" class="btn btn-outline-dark">Elegir</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="instalaciones" class="gallery section">
+    <div class="container">
+      <div class="section-header"><span class="tag">El espacio</span><h2>Nuestras <span class="accent">Instalaciones</span></h2></div>
+      <div class="gallery-grid">
+        <div class="g-item g-tall"><div class="g-ph"><i class="fas fa-dumbbell"></i></div></div>
+        <div class="g-item"><div class="g-ph"><i class="fas fa-running"></i></div></div>
+        <div class="g-item"><div class="g-ph"><i class="fas fa-bicycle"></i></div></div>
+        <div class="g-item g-wide"><div class="g-ph"><i class="fas fa-fire"></i></div></div>
+        <div class="g-item"><div class="g-ph"><i class="fas fa-spa"></i></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact section">
+    <div class="container">
+      <div class="section-header"><span class="tag">Ubicación</span><h2>¿Dónde <span class="accent">estamos?</span></h2></div>
+      <div class="contact-grid">
+        <div>
+          <div class="c-item"><div class="c-icon"><i class="fas fa-map-marker-alt"></i></div><div><strong>Dirección</strong><span>Av. Rivadavia 7800, Flores, CABA</span></div></div>
+          <div class="c-item"><div class="c-icon"><i class="fas fa-clock"></i></div><div><strong>Horarios</strong><span>Lun–Vie: 6 a 22 hs · Sáb: 8 a 18 hs · Dom: 9 a 14 hs</span></div></div>
+          <div class="c-item"><div class="c-icon"><i class="fab fa-whatsapp"></i></div><div><strong>WhatsApp</strong><span>+54 9 11 6666-6666</span></div></div>
+          <div class="c-item"><div class="c-icon"><i class="fab fa-instagram"></i></div><div><strong>Instagram</strong><span>@fitzoneoficial</span></div></div>
+          <a href="https://wa.me/5491100000000" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> Inscribirme por WhatsApp</a>
+        </div>
+        <div class="map-box"><i class="fas fa-map-marked-alt"></i><span>Mapa aquí</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer><div class="container"><p>&copy; 2025 FitZone Gym · Flores, CABA · <a href="https://leonardovigorito.github.io/lv-web/" target="_blank">Sitio web por LV Web</a></p></div></footer>
+  <a href="https://wa.me/5491100000000" target="_blank" class="wa-float"><i class="fab fa-whatsapp"></i></a>
+  <script src="script.js"></script>
+</body>
+</html>

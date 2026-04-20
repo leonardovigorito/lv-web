@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Dr. Martín Álvarez — Médico Clínico</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="demo-banner">🎨 Sitio de demostración — <a href="https://leonardovigorito.github.io/lv-web/" target="_blank">Quiero uno así para mi negocio</a></div>
+  <nav id="navbar">
+    <div class="logo"><i class="fas fa-stethoscope"></i> Dr. Álvarez</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#obras-sociales">Coberturas</a></li>
+      <li><a href="#contacto">Turno</a></li>
+    </ul>
+    <a href="https://wa.me/5491100000000" target="_blank" class="nav-cta"><i class="fab fa-whatsapp"></i> Pedir turno</a>
+    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-tag">Médico Clínico · Matrícula 12345 · Belgrano, CABA</p>
+      <h1>Dr. Martín Álvarez</h1>
+      <h2 class="hero-subtitle">Medicina Clínica y Preventiva</h2>
+      <p class="hero-sub">Atención médica integral con enfoque humano y preventivo. Más de 15 años cuidando la salud de pacientes en Buenos Aires.</p>
+      <div class="hero-btns">
+        <a href="https://wa.me/5491100000000" target="_blank" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Pedir turno</a>
+        <a href="#servicios" class="btn btn-outline-dark">Ver servicios</a>
+      </div>
+      <div class="hero-credentials">
+        <div class="cred"><i class="fas fa-graduation-cap"></i><span>UBA · Facultad de Medicina</span></div>
+        <div class="cred"><i class="fas fa-hospital"></i><span>Hospital Italiano</span></div>
+        <div class="cred"><i class="fas fa-award"></i><span>15+ años de experiencia</span></div>
+      </div>
+    </div>
+    <div class="hero-img"><div class="hero-ph"><i class="fas fa-user-md"></i></div></div>
+  </section>
+
+  <section id="servicios" class="section">
+    <div class="container">
+      <div class="section-header"><span class="tag">Especialidades</span><h2>Mis <span class="accent">Servicios</span></h2></div>
+      <div class="srv-grid">
+        <div class="srv-card"><div class="srv-icon"><i class="fas fa-heartbeat"></i></div><h3>Consulta clínica general</h3><p>Diagnóstico, tratamiento y seguimiento de enfermedades crónicas y agudas.</p></div>
+        <div class="srv-card"><div class="srv-icon"><i class="fas fa-shield-virus"></i></div><h3>Medicina preventiva</h3><p>Chequeos anuales, vacunación y planes de salud personalizados.</p></div>
+        <div class="srv-card"><div class="srv-icon"><i class="fas fa-vials"></i></div><h3>Solicitud de estudios</h3><p>Análisis de laboratorio, imágenes y derivaciones a especialistas.</p></div>
+        <div class="srv-card"><div class="srv-icon"><i class="fas fa-file-medical"></i></div><h3>Certificados médicos</h3><p>Certificados laborales, aptitud física y preocupacionales.</p></div>
+        <div class="srv-card"><div class="srv-icon"><i class="fas fa-pills"></i></div><h3>Control de medicación</h3><p>Revisión y ajuste de tratamientos farmacológicos.</p></div>
+        <div class="srv-card"><div class="srv-icon"><i class="fas fa-video"></i></div><h3>Consulta online</h3><p>Atención por videollamada para seguimientos y consultas simples.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre-mi" class="about section">
+    <div class="container about-grid">
+      <div class="about-img-ph"><i class="fas fa-user-md"></i></div>
+      <div>
+        <span class="tag">Trayectoria</span>
+        <h2>Sobre el <span class="accent">Dr. Álvarez</span></h2>
+        <p>Médico egresado de la Universidad de Buenos Aires con especialización en Medicina Interna. Formado en el Hospital Italiano con una residencia de 4 años.</p>
+        <p>Mi enfoque es tratar al paciente de manera integral: no solo la enfermedad, sino su contexto, hábitos y calidad de vida.</p>
+        <div class="timeline">
+          <div class="tl-item"><span class="tl-year">2005</span><p>Médico MN · UBA · Facultad de Medicina</p></div>
+          <div class="tl-item"><span class="tl-year">2009</span><p>Residencia completa · Hospital Italiano</p></div>
+          <div class="tl-item"><span class="tl-year">2010</span><p>Consultorio propio en Belgrano</p></div>
+          <div class="tl-item"><span class="tl-year">2018</span><p>Certificación en Medicina Preventiva</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="obras-sociales" class="coberturas section">
+    <div class="container">
+      <div class="section-header"><span class="tag">Coberturas</span><h2>Obras sociales y <span class="accent">prepagas</span></h2></div>
+      <div class="coberturas-grid">
+        <div class="cob-item"><i class="fas fa-check-circle"></i> OSDE</div>
+        <div class="cob-item"><i class="fas fa-check-circle"></i> Swiss Medical</div>
+        <div class="cob-item"><i class="fas fa-check-circle"></i> Medicus</div>
+        <div class="cob-item"><i class="fas fa-check-circle"></i> Galeno</div>
+        <div class="cob-item"><i class="fas fa-check-circle"></i> IOMA</div>
+        <div class="cob-item"><i class="fas fa-check-circle"></i> PAMI</div>
+        <div class="cob-item"><i class="fas fa-check-circle"></i> Sancor Salud</div>
+        <div class="cob-item"><i class="fas fa-check-circle"></i> Consulta particular</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact section">
+    <div class="container">
+      <div class="section-header"><span class="tag">Turnos</span><h2>Pedí tu <span class="accent">turno</span></h2></div>
+      <div class="contact-grid">
+        <div>
+          <div class="c-item"><div class="c-icon"><i class="fas fa-map-marker-alt"></i></div><div><strong>Dirección</strong><span>Av. Cabildo 1200, Piso 3°, Belgrano</span></div></div>
+          <div class="c-item"><div class="c-icon"><i class="fas fa-clock"></i></div><div><strong>Horarios</strong><span>Lun/Mié/Vie: 9–13 hs · Mar/Jue: 15–19 hs</span></div></div>
+          <div class="c-item"><div class="c-icon"><i class="fab fa-whatsapp"></i></div><div><strong>WhatsApp</strong><span>+54 9 11 7777-7777</span></div></div>
+          <div class="c-item"><div class="c-icon"><i class="fas fa-envelope"></i></div><div><strong>Email</strong><span>turnos@dralvarez.com.ar</span></div></div>
+          <a href="https://wa.me/5491100000000" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> Pedir turno por WhatsApp</a>
+        </div>
+        <div class="map-box"><i class="fas fa-map-marked-alt"></i><span>Mapa aquí</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer><div class="container"><p>&copy; 2025 Dr. Martín Álvarez · Medicina Clínica · Matrícula 12345 · <a href="https://leonardovigorito.github.io/lv-web/" target="_blank">Sitio web por LV Web</a></p></div></footer>
+  <a href="https://wa.me/5491100000000" target="_blank" class="wa-float"><i class="fab fa-whatsapp"></i></a>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Moda Única — Ropa y Accesorios</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="demo-banner">🎨 Sitio de demostración — <a href="https://leonardovigorito.github.io/lv-web/" target="_blank">Quiero uno así para mi negocio</a></div>
+  <div class="top-bar"><span><i class="fas fa-truck"></i> Envíos a todo el país</span><span><i class="fab fa-whatsapp"></i> Pedidos por WhatsApp</span><span><i class="fas fa-undo"></i> Cambios sin costo</span></div>
+  <nav id="navbar">
+    <div class="logo">Moda <span>Única</span></div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#catalogo">Catálogo</a></li>
+      <li><a href="#novedades">Novedades</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="https://wa.me/5491100000000" target="_blank" class="nav-cta"><i class="fab fa-whatsapp"></i> Pedir</a>
+    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-tag">Nueva colección Otoño–Invierno 2025</p>
+      <h1>Estilo que te<br><span class="gradient">define</span></h1>
+      <p class="hero-sub">Ropa y accesorios de moda para mujer. Diseños exclusivos, telas premium y envíos a todo el país en 48hs.</p>
+      <div class="hero-btns">
+        <a href="#catalogo" class="btn btn-primary">Ver catálogo</a>
+        <a href="https://wa.me/5491100000000" target="_blank" class="btn btn-wa-hero"><i class="fab fa-whatsapp"></i> Comprar por WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-img"><div class="hero-ph"><i class="fas fa-tshirt"></i></div></div>
+  </section>
+
+  <section id="catalogo" class="section">
+    <div class="container">
+      <div class="section-header"><span class="tag">Colección</span><h2>Nuestro <span class="accent">Catálogo</span></h2><p>Click en cualquier producto para comprar por WhatsApp</p></div>
+      <div class="products-grid">
+        <div class="product-card" onclick="buyProduct('Campera de cuero sintético')">
+          <div class="product-img"><i class="fas fa-tshirt"></i><div class="product-overlay"><i class="fab fa-whatsapp"></i> Consultar</div></div>
+          <div class="product-info"><h3>Campera cuero sint.</h3><p>Varios colores · Talle S al XL</p><div class="product-price"><span class="price-new">$28.500</span></div></div>
+        </div>
+        <div class="product-card new-badge" onclick="buyProduct('Vestido floral primavera')">
+          <div class="product-img"><i class="fas fa-female"></i><div class="product-overlay"><i class="fab fa-whatsapp"></i> Consultar</div></div>
+          <div class="product-info"><h3>Vestido floral</h3><p>Edición limitada · Talle S al L</p><div class="product-price"><span class="price-new">$19.900</span></div></div>
+        </div>
+        <div class="product-card" onclick="buyProduct('Jean skinny negro')">
+          <div class="product-img"><i class="fas fa-mitten"></i><div class="product-overlay"><i class="fab fa-whatsapp"></i> Consultar</div></div>
+          <div class="product-info"><h3>Jean skinny negro</h3><p>Corte ajustado · 36 al 46</p><div class="product-price"><span class="price-new">$16.800</span></div></div>
+        </div>
+        <div class="product-card sale-badge" onclick="buyProduct('Sweater oversize')">
+          <div class="product-img"><i class="fas fa-snowflake"></i><div class="product-overlay"><i class="fab fa-whatsapp"></i> Consultar</div></div>
+          <div class="product-info"><h3>Sweater oversize</h3><p>Lana merino · Varios colores</p><div class="product-price"><span class="price-old">$18.000</span><span class="price-new">$13.500</span></div></div>
+        </div>
+        <div class="product-card" onclick="buyProduct('Cartera de cuero')">
+          <div class="product-img"><i class="fas fa-shopping-bag"></i><div class="product-overlay"><i class="fab fa-whatsapp"></i> Consultar</div></div>
+          <div class="product-info"><h3>Cartera de cuero</h3><p>Beige y negro · 2 tamaños</p><div class="product-price"><span class="price-new">$24.000</span></div></div>
+        </div>
+        <div class="product-card" onclick="buyProduct('Conjunto deportivo')">
+          <div class="product-img"><i class="fas fa-running"></i><div class="product-overlay"><i class="fab fa-whatsapp"></i> Consultar</div></div>
+          <div class="product-info"><h3>Conjunto deportivo</h3><p>Top + calza · 4 colores</p><div class="product-price"><span class="price-new">$22.500</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="about section">
+    <div class="container about-grid">
+      <div class="about-text">
+        <span class="tag">Nuestra historia</span>
+        <h2>Moda con <span class="accent">propósito</span></h2>
+        <p>Somos una tienda familiar de Caballito fundada en 2015. Trabajamos con diseñadores independientes argentinos para ofrecerte piezas únicas que no encontrás en ningún otro lado.</p>
+        <p>Cada prenda que vendemos pasa por un control de calidad riguroso. Creemos en la moda responsable y duradera.</p>
+        <div class="features">
+          <div class="feat"><i class="fas fa-check-circle"></i> Diseñadores argentinos</div>
+          <div class="feat"><i class="fas fa-check-circle"></i> Envío en 48 hs</div>
+          <div class="feat"><i class="fas fa-check-circle"></i> Cambios y devoluciones</div>
+          <div class="feat"><i class="fas fa-check-circle"></i> Pago en cuotas</div>
+        </div>
+      </div>
+      <div class="about-img"><div class="img-ph"><i class="fas fa-store"></i></div></div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact section">
+    <div class="container">
+      <div class="section-header"><span class="tag">Encontranos</span><h2>Local y <span class="accent">contacto</span></h2></div>
+      <div class="contact-grid">
+        <div>
+          <div class="c-item"><div class="c-icon"><i class="fas fa-map-marker-alt"></i></div><div><strong>Local físico</strong><span>Rivadavia 5300, Caballito, CABA</span></div></div>
+          <div class="c-item"><div class="c-icon"><i class="fas fa-clock"></i></div><div><strong>Horarios</strong><span>Lun–Sáb: 10 a 20 hs · Dom: 12 a 18 hs</span></div></div>
+          <div class="c-item"><div class="c-icon"><i class="fab fa-whatsapp"></i></div><div><strong>WhatsApp / Pedidos</strong><span>+54 9 11 8888-8888</span></div></div>
+          <div class="c-item"><div class="c-icon"><i class="fab fa-instagram"></i></div><div><strong>Instagram</strong><span>@modaunica.ba</span></div></div>
+          <a href="https://wa.me/5491100000000" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> Hacer un pedido</a>
+        </div>
+        <div class="map-box"><i class="fas fa-map-marked-alt"></i><span>Mapa aquí</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer><div class="container"><p>&copy; 2025 Moda Única · Caballito, CABA · <a href="https://leonardovigorito.github.io/lv-web/" target="_blank">Sitio web por LV Web</a></p></div></footer>
+  <a href="https://wa.me/5491100000000" target="_blank" class="wa-float"><i class="fab fa-whatsapp"></i></a>
+  <script src="script.js"></script>
+</body>
+</html>

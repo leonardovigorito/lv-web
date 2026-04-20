@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Parrilla de Don Carlos</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="demo-banner">🎨 Sitio de demostración — <a href="https://leonardovigorito.github.io/lv-web/" target="_blank">Quiero uno así para mi negocio</a></div>
+
+  <nav id="navbar">
+    <div class="logo"><i class="fas fa-fire"></i> La Parrilla de Don Carlos</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <a href="https://wa.me/5491100000000" target="_blank" class="nav-cta"><i class="fab fa-whatsapp"></i> Reservar</a>
+    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag"><i class="fas fa-star"></i> Desde 1998 · Palermo, Buenos Aires</p>
+      <h1>La mejor parrilla<br>de Buenos Aires</h1>
+      <p class="hero-sub">Carnes premium a la brasa, ambiente familiar y los mejores vinos argentinos. Reservá tu mesa hoy.</p>
+      <div class="hero-btns">
+        <a href="https://wa.me/5491100000000" target="_blank" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Reservar mesa</a>
+        <a href="#menu" class="btn btn-outline">Ver menú</a>
+      </div>
+      <div class="hero-info">
+        <span><i class="fas fa-clock"></i> Lun–Dom: 12 a 16 hs · 20 a 00 hs</span>
+        <span><i class="fas fa-map-marker-alt"></i> Palermo, CABA</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Lo que ofrecemos</span>
+        <h2>Nuestro <span class="accent">Menú</span></h2>
+      </div>
+      <div class="menu-tabs">
+        <button class="tab-btn active" onclick="showTab('parrilla')">Parrilla</button>
+        <button class="tab-btn" onclick="showTab('entradas')">Entradas</button>
+        <button class="tab-btn" onclick="showTab('postres')">Postres</button>
+        <button class="tab-btn" onclick="showTab('bebidas')">Bebidas</button>
+      </div>
+      <div class="menu-grid" id="tab-parrilla">
+        <div class="menu-item"><div class="menu-icon">🥩</div><div><h3>Bife de chorizo</h3><p>400g de corte premium al punto que elijas</p></div><span class="price">$4.500</span></div>
+        <div class="menu-item"><div class="menu-icon">🍖</div><div><h3>Asado de tira</h3><p>Costillas de novillo a la parrilla</p></div><span class="price">$3.800</span></div>
+        <div class="menu-item"><div class="menu-icon">🥓</div><div><h3>Vacío completo</h3><p>Para 2 personas, con chimichurri y ensalada</p></div><span class="price">$8.200</span></div>
+        <div class="menu-item"><div class="menu-icon">🍗</div><div><h3>Pollo al limón</h3><p>Pollo entero a la brasa con hierbas</p></div><span class="price">$3.200</span></div>
+      </div>
+      <div class="menu-grid hidden" id="tab-entradas">
+        <div class="menu-item"><div class="menu-icon">🧀</div><div><h3>Tabla de fiambres</h3><p>Selección de quesos y embutidos</p></div><span class="price">$2.800</span></div>
+        <div class="menu-item"><div class="menu-icon">🫀</div><div><h3>Mollejas grilladas</h3><p>Con limón y perejil fresco</p></div><span class="price">$2.200</span></div>
+      </div>
+      <div class="menu-grid hidden" id="tab-postres">
+        <div class="menu-item"><div class="menu-icon">🍮</div><div><h3>Flan casero</h3><p>Con crema y dulce de leche</p></div><span class="price">$900</span></div>
+        <div class="menu-item"><div class="menu-icon">🍨</div><div><h3>Helado artesanal</h3><p>2 gustos con salsa de chocolate</p></div><span class="price">$1.100</span></div>
+      </div>
+      <div class="menu-grid hidden" id="tab-bebidas">
+        <div class="menu-item"><div class="menu-icon">🍷</div><div><h3>Vino Malbec</h3><p>Botella 750ml — Mendoza</p></div><span class="price">$3.500</span></div>
+        <div class="menu-item"><div class="menu-icon">🍺</div><div><h3>Cerveza artesanal</h3><p>Chopera 500ml</p></div><span class="price">$1.200</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="about section">
+    <div class="container about-grid">
+      <div class="about-img"><div class="img-box"><i class="fas fa-fire-alt"></i></div></div>
+      <div class="about-text">
+        <span class="tag">Nuestra historia</span>
+        <h2>25 años asando con amor</h2>
+        <p>Don Carlos comenzó con un sueño simple: ofrecer la mejor carne de Buenos Aires a precio justo. Desde 1998, tres generaciones de la familia Rodríguez mantienen viva esa llama.</p>
+        <p>Trabajamos con productores locales de la Pampa, seleccionando cortes a mano cada mañana. Sin freezer, sin precocido: todo se cocina al momento.</p>
+        <div class="features">
+          <div class="feat"><i class="fas fa-check-circle"></i> Carnes del día, sin freezer</div>
+          <div class="feat"><i class="fas fa-check-circle"></i> Productores locales pampeanos</div>
+          <div class="feat"><i class="fas fa-check-circle"></i> Atención familiar y personalizada</div>
+          <div class="feat"><i class="fas fa-check-circle"></i> Estacionamiento propio</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="gallery section">
+    <div class="container">
+      <div class="section-header"><span class="tag">Fotos</span><h2>Nuestra <span class="accent">Galería</span></h2></div>
+      <div class="gallery-grid">
+        <div class="g-item g-tall"><div class="g-ph"><i class="fas fa-fire"></i></div></div>
+        <div class="g-item"><div class="g-ph"><i class="fas fa-utensils"></i></div></div>
+        <div class="g-item"><div class="g-ph"><i class="fas fa-wine-glass-alt"></i></div></div>
+        <div class="g-item g-wide"><div class="g-ph"><i class="fas fa-people-group"></i></div></div>
+        <div class="g-item"><div class="g-ph"><i class="fas fa-drumstick-bite"></i></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact section">
+    <div class="container">
+      <div class="section-header"><span class="tag">Visitanos</span><h2>¿Dónde <span class="accent">estamos?</span></h2></div>
+      <div class="contact-grid">
+        <div>
+          <div class="c-item"><div class="c-icon"><i class="fas fa-map-marker-alt"></i></div><div><strong>Dirección</strong><span>Av. Santa Fe 3456, Palermo, CABA</span></div></div>
+          <div class="c-item"><div class="c-icon"><i class="fas fa-clock"></i></div><div><strong>Horarios</strong><span>Lun–Dom: 12–16 hs y 20–00 hs</span></div></div>
+          <div class="c-item"><div class="c-icon"><i class="fab fa-whatsapp"></i></div><div><strong>WhatsApp</strong><span>+54 9 11 5555-5555</span></div></div>
+          <div class="c-item"><div class="c-icon"><i class="fab fa-instagram"></i></div><div><strong>Instagram</strong><span>@laparrilladoncarlos</span></div></div>
+          <a href="https://wa.me/5491100000000" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> Reservar por WhatsApp</a>
+        </div>
+        <div class="map-box"><i class="fas fa-map-marked-alt"></i><span>Mapa aquí</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer><div class="container"><p>&copy; 2025 La Parrilla de Don Carlos · Palermo, Buenos Aires · <a href="https://leonardovigorito.github.io/lv-web/" target="_blank">Sitio web por LV Web</a></p></div></footer>
+  <a href="https://wa.me/5491100000000" target="_blank" class="wa-float"><i class="fab fa-whatsapp"></i></a>
+  <script src="script.js"></script>
+</body>
+</html>
