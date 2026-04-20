@@ -102,7 +102,7 @@ ul { list-style: none; }
 .works-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
 .work-card { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; transition: all 0.25s; }
 .work-card:hover { box-shadow: var(--shadow); transform: translateY(-4px); }
-.work-preview { height: 160px; }
+.work-preview { height: 160px; display: flex; align-items: center; justify-content: center; }
 .p-restaurant { background: linear-gradient(135deg, #7f1d1d, #dc2626); }
 .p-barber    { background: linear-gradient(135deg, #1e3a5f, #2563eb); }
 .p-gym       { background: linear-gradient(135deg, #14532d, #16a34a); }
@@ -116,6 +116,8 @@ ul { list-style: none; }
 .work-tags span { background: #ede9fe; color: var(--primary); padding: 0.2rem 0.6rem; border-radius: 20px; font-size: 0.72rem; font-weight: 600; }
 .work-available { font-size: 0.82rem; font-weight: 600; color: #16a34a; display: inline-flex; align-items: center; gap: 0.35rem; }
 .work-available i { font-size: 0.5rem; }
+.work-link { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; font-weight: 600; color: var(--primary); padding: 0.5rem 1rem; border: 2px solid var(--primary); border-radius: 8px; transition: all 0.2s; }
+.work-link:hover { background: var(--primary); color: white; transform: translateY(-1px); }
 
 /* PRICING */
 .pricing { background: var(--bg2); }
